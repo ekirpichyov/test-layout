@@ -64,9 +64,16 @@ h1 {
 }
 .slider .big-image {
   width: auto !important;
-  height: calc(50vw - 105px);
+  height: calc(40vw - 105px);
   max-height: 600px;
   margin-left: -25%;
+  cursor: pointer;
+}
+.slider .prev-image {
+  cursor: pointer;
+}
+.slider .prev-image:hover {
+  filter: opacity(0.7);
 }
 
 .special-buttons {
@@ -266,6 +273,7 @@ h1 {
   color: #ccc;
   top: 20px;
   right: 40px;
+  cursor: pointer;
 }
 .slider__popup .close:hover {
   color: #fff;
