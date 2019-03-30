@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: "Bebas Neue Bold";
-  font-display: auto;
+  font-display: swap;
   src: local("Bebas Neue Bold"), url("../fonts/BebasNeueBold.woff"), url("../fonts/Bebas_Neue.ttf") format("truetype");
 }
 @font-face {
   font-family: "Ubuntu";
-  font-display: auto;
+  font-display: swap;
   src: local("Ubuntu"), url("../fonts/ubuntu.woff2"), url("../fonts/ubuntu.woff"), url("../fonts/ubuntu.ttf") format("truetype");
 }
 .wrap {
