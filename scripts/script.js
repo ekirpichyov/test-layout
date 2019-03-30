@@ -54,7 +54,7 @@ const popup = $("<div class='slider__popup'></div>")
         closeButton.appendTo(".slider__popup")
     })
 
-    $("html").on("click", ".close", ()=>{
+    $("html").on("click touchstart", ".close", ()=>{
         $(".popup").remove()
         $(".close").remove()
         $(".slider__popup").remove()
