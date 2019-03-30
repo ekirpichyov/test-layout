@@ -59,12 +59,12 @@ h1 {
   float: left;
   overflow: hidden;
   max-width: 600px;
-  width: calc(50% - 105px);
+  width: calc(50vw - 135px);
   border-left: 1px solid #ebebeb;
 }
 .slider .big-image {
   width: auto !important;
-  height: calc(40vw - 105px);
+  height: calc(50vw - 135px);
   max-height: 600px;
   margin-left: -25%;
   cursor: pointer;
