@@ -1,0 +1,407 @@
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../fonts/BebasNeueBold.eot");
+  src: url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Bebas_Neue.ttf") format("truetype");
+}
+.wrap {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1 {
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+.head {
+  height: 135px;
+}
+.head .navigation {
+  list-style: none;
+  display: inline;
+}
+.head .navigation li {
+  display: inline;
+  color: #7a747a;
+}
+.head .navigation li a:hover {
+  color: #552752;
+}
+.head .navigation li a {
+  color: #7a747a;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+}
+.head .navigation li:not(:last-child)::after {
+  content: " -";
+}
+.head .title {
+  display: block;
+  margin: 25px 0;
+}
+
+.slider {
+  float: left;
+  overflow: hidden;
+  max-width: 600px;
+  width: calc(50% - 105px);
+  border-left: 1px solid #ebebeb;
+}
+.slider .big-image {
+  width: auto !important;
+  height: calc(50vw - 105px);
+  max-height: 600px;
+  margin-left: -25%;
+}
+
+.special-buttons {
+  cursor: pointer;
+  border-top: 1px solid #ebebeb;
+  float: right;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.special-buttons .wishlist:hover {
+  filter: contrast(150%);
+}
+.special-buttons .compare:hover {
+  filter: contrast(150%);
+}
+.special-buttons .wishlist {
+  margin: 25px 0 35px 0;
+  width: 38px;
+  height: 30px;
+  background-size: cover;
+  background-image: url(../images/wishlist.png);
+}
+.special-buttons .compare {
+  width: 33px;
+  height: 30px;
+  background-size: cover;
+  background-image: url(../images/compare.png);
+}
+
+.product__info {
+  color: #2d2429;
+  width: 50%;
+  float: right;
+  border: 1px solid #ebebeb;
+  border-bottom: 0;
+}
+.product__info .info {
+  font-family: "Ubuntu", sans-serif;
+  margin: 30px 40px;
+}
+.product__info .info .info__spec {
+  display: block;
+  height: 100%;
+}
+.product__info .info .info__spec div {
+  display: flex;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: bold;
+}
+.product__info .info .info__spec div div:first-child {
+  float: left;
+  white-space: nowrap;
+}
+.product__info .info .info__spec div .dots {
+  height: 12px;
+  width: 100%;
+  border-bottom: 1px dotted #ebebeb;
+  margin: 7px;
+}
+.product__info .info .info__spec div div:last-child {
+  float: right;
+  white-space: nowrap;
+  display: inline;
+}
+.product__info .info .info__description {
+  display: block;
+  margin: 30px 0;
+}
+.product__info .info .info__buttons {
+  cursor: pointer;
+  height: 20px;
+}
+.product__info .info .info__buttons .read-more {
+  font-family: "Bebas Neue Bold", sans-serif;
+  color: #552752;
+  font-size: 18px;
+  float: left;
+}
+.product__info .info .info__buttons .share {
+  position: relative;
+  font-family: "Bebas Neue Bold", sans-serif;
+  color: #552752;
+  font-size: 18px;
+  float: right;
+}
+.product__info .info .info__buttons .share .ya-share2 {
+  display: none;
+}
+.product__info .info .info__buttons .share:hover .ya-share2 {
+  background: #552752;
+  border: 0px;
+  border-radius: 5px;
+  position: absolute;
+  width: 136px;
+  right: 75px;
+  top: -10px;
+  float: left;
+  display: block;
+  padding: 5px;
+}
+.product__info .price {
+  margin: 30px 40px;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  height: 115px;
+}
+.product__info .price .price__value {
+  margin: 25px 0;
+  float: left;
+}
+.product__info .price .price__value .price__metric {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #7a747a;
+}
+.product__info .price .price__value .price__current {
+  margin: 10px 0;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 36px;
+  color: #ce5f96;
+}
+.product__info .price .price__value .price__current .price__old {
+  display: inline;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 22px;
+  color: #2d2429;
+  text-decoration: line-through;
+}
+.product__info .price button {
+  margin: 30px 0;
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 18px;
+  height: 50px;
+  width: 200px;
+  color: #FFF;
+  background: #552752;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  float: right;
+  box-shadow: -8px 0 0 #b6cb47, -16px 0 0 #ce5f96, -24px 0 0 #f2c0dc;
+}
+.product__info .price button i {
+  margin-right: 10px;
+}
+.product__info .price button:hover {
+  background: #704267;
+}
+.product__info .links {
+  font-family: "Bebas Neue Bold", sans-serif;
+  font-size: 18px;
+  color: #552752;
+  margin: 10px 40px;
+}
+.product__info .links div {
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 55%;
+}
+.product__info .links div i {
+  margin-right: 10px;
+}
+.product__info .links div:nth-child(2n) {
+  width: 40%;
+}
+.product__info .links div:nth-child(2n) i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.product__info .links div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.slider__popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.slider__popup .popup {
+  box-shadow: 0 0 150px rgba(0, 0, 0, 0.5);
+  margin: 5% 20%;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: 60%;
+}
+.slider__popup .close {
+  position: fixed;
+  font-size: 60px;
+  color: #ccc;
+  top: 20px;
+  right: 40px;
+}
+.slider__popup .close:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider__popup .popup {
+    width: 80%;
+    margin: 15% 10%;
+  }
+  .slider__popup .close {
+    font-size: 36px;
+    right: 20px;
+  }
+
+  .product__info .info .info__spec {
+    height: 175px;
+  }
+  .product__info .info .info__spec div {
+    justify-content: space-between;
+  }
+  .product__info .info .info__spec div .dots {
+    display: none;
+  }
+  .product__info .info .info__spec div div:last-child {
+    padding: 0 0 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .product__info .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+    height: auto;
+  }
+  .product__info .price .price__value {
+    float: none;
+    margin-bottom: 0;
+  }
+  .product__info .price .price__calculation {
+    width: 200px;
+    float: none;
+    margin: 30px 0 30px 24px;
+  }
+
+  .slider {
+    float: left;
+    overflow: hidden;
+    width: calc(50% - 3px);
+    max-width: 600px;
+  }
+  .slider .big-image {
+    width: auto !important;
+    height: calc(50vw - 35px);
+    max-height: 600px;
+  }
+
+  .special-buttons {
+    border: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    float: right;
+    margin: 40px 0;
+  }
+  .special-buttons .wishlist {
+    margin: 0;
+  }
+
+  .links div i {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__popup .popup {
+    width: 100%;
+    margin: 40% 0;
+  }
+  .slider__popup .close {
+    font-size: 36px;
+    right: 20px;
+  }
+
+  .head {
+    padding: 30px;
+  }
+
+  .wrap {
+    padding: 0;
+  }
+
+  .slider {
+    border: 0;
+    float: none;
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .slider .big-image {
+    height: 100vw;
+  }
+
+  .product {
+    width: 100vw;
+  }
+  .product .product__info {
+    width: 100vw;
+    border-right: 0;
+  }
+  .product .product__info .info {
+    margin: 40px 15px;
+  }
+  .product .links {
+    margin: 15px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  .product .links div i {
+    display: inline;
+  }
+
+  .special-buttons {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 42px !important;
+  }
+
+  .links {
+    margin-left: 15px !important;
+  }
+  .links i {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
