@@ -61,8 +61,30 @@ const popup = $("<div class='slider__popup'></div>")
         closeButton.appendTo(".slider__popup")
     })
 
-    $("html").on("click touchstart", ".close", ()=>{
+    $("html").on("click touchover", ".close", ()=>{
         $(".popup").remove()
         $(".close").remove()
         $(".slider__popup").remove()
     })
+
+//show calculate popup
+
+const calculatePopup = $('<div class="calculate__popup">\
+<div id="popup" action="" method="post">\
+    <label for="name">Имя: </label>\
+    <input type="text" name="name" id="name" placeholder="Введите имя">\
+    <label for="number">Телефон: </label>\
+    <input type="tel" name="number" id="number" placeholder="Введите номер">\
+    <input type="submit" id="submit" disabled value="Отправить"></div></div>')
+
+    $("html").on("click", ".price__calculation", ()=>{
+        calculatePopup.appendTo("body")
+        closeButton.appendTo("body")
+    })
+
+    $("html").on("click touchover", ".close", ()=>{
+        $(".calculate__popup").remove()
+        $(".close").remove()
+    })
+
+//todo: validate
